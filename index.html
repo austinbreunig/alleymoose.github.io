@@ -14,22 +14,27 @@
     }
 
     header {
-      background: #111;
-      color: white;
-      padding: 60px 20px;
+      background: #fefdfd;
+      color: black;
+      padding: 40px 20px 60px;
       text-align: center;
     }
 
+    .logo {
+      max-width: 220px;
+      margin-bottom: 20px;
+    }
+
     header h1 {
-      margin: 0;
-      font-size: 3em;
+      margin: 10px 0 0;
+      font-size: 2.5em;
       letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 12px;
-      font-size: 1.3em;
-      color: #ddd;
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #652c2c;
     }
 
     .container {
@@ -52,6 +57,44 @@
       padding-bottom: 10px;
     }
 
+    .routes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .route-card {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .route-card h3 {
+      margin-top: 0;
+    }
+
+    .route-card iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* mobile responsiveness */
+    @media (max-width: 768px) {
+      .routes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    .month-title {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+
     .placeholder-map {
       border: 2px dashed #aaa;
       border-radius: 10px;
@@ -65,7 +108,7 @@
       text-align: center;
       padding: 25px;
       background: #111;
-      color: #aaa;
+      color: #080707;
       font-size: 0.9em;
     }
   </style>
@@ -74,8 +117,11 @@
 <body>
 
   <header>
+    <!-- LOGO HERE -->
+    <img src="assets/alleymoose_logo.png" alt="Alley Moose Logo" class="logo">
+
     <h1>Alley Moose Race Series</h1>
-    <p>Welcome to Alley Moose. Come ride with us.</p>
+    <p>Welcome to Alley Moose. Come ride with us!</p>
   </header>
 
   <main class="container">
@@ -100,7 +146,7 @@
 
       <p>
         These events are free. The only requirement is that you record your ride with GPS
-        and upload it using a service like Garmin or Strava.
+        and upload it using a service like Garmin or Strava. Event standings will be published/updated on a weekly basis. 
       </p>
 
       <p>
@@ -110,15 +156,60 @@
     </section>
 
     <section>
-      <h2>Routes</h2>
-      <p>
-        Monthly gravel and trail routes will be posted here.
-      </p>
+  <h2>Race Calendar</h2>
 
-      <div class="placeholder-map">
-        Embedded maps coming soon
+  <!-- MAY -->
+  <div class="section">
+    <h3 class="month-title">May</h3>
+    <h4> 
+      Time Window: May 1st - May 31st
+    </h4>
+
+    <div class="routes-grid">
+
+      <!-- Trail -->
+      <div class="route-card">
+        <h3>Trail: East Mag Walker</h3>
+        <p>
+          Wind your way through the narrow and obscure forest of East Magnolia, 
+          keep your eyes on the views (and baby-heads) down Winiger Ridge, 
+          stay upright through Walker Ranch, and then finally, huck it up and over Flagstaff
+          to enjoy a mellow cruise back into Boulder.
+        </p>
+        <p>
+          Tire rec: 2.0" - 2.6"
+        </p>
+        <p>
+          Grand Depart: May 16th, 2026
+        </p>
+        
+        <iframe 
+          src="https://ridewithgps.com/embeds?type=route&id=54837273&sampleGraph=true&distanceMarkers=true"
+          scrolling="no"></iframe>
       </div>
-    </section>
+
+      <!-- Gravel -->
+      <div class="route-card">
+        <h3>Gravel: The Gold Ridge Ramble</h3>
+        <p>
+          Warmup Caribou and 103, knock it through Switz, rip Sawmill, drag it up GH, and pick your 
+          good lines down Rowena and North Sky to keep it rolling to Boulder.
+        </p>
+        <p>
+          Tire Rec: 42mm - 55mm
+        </p>
+        <p>
+          Grand Depart: May 17th, 2026
+        </p>
+
+        <div class="placeholder-map">
+          May Gravel route map coming soon
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
     <section>
       <h2>Guidelines</h2>
