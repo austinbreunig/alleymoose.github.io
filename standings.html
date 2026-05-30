@@ -10,6 +10,7 @@
       font-family: Arial, sans-serif;
       background: #f4f1ea;
       color: #222;
+      line-height: 1.6;
     }
 
     header {
@@ -25,15 +26,34 @@
       padding: 0 20px;
     }
 
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .month-section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
     h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 10px;
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #444;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin-top: 15px;
       background: white;
       border-radius: 8px;
       overflow: hidden;
@@ -42,6 +62,7 @@
     th, td {
       padding: 12px;
       text-align: left;
+      border-bottom: 1px solid #eee;
     }
 
     th {
@@ -56,15 +77,20 @@
     a {
       color: #2a6fdb;
       text-decoration: none;
+      font-weight: 500;
     }
 
     a:hover {
       text-decoration: underline;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-bottom: 20px;
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9em;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -80,8 +106,108 @@
 
     <a href="index.html" class="back-link">← Back to Home</a>
 
-<section>
-    <h2>
-        Standings
-    </h2>
-</section>
+    <section class="month-section">
+      <h2>May 2026</h2>
+
+      <h3>Trail — East Mag Walker</h3>
+      <table>
+        <tr>
+          <th>Rank</th>
+          <th>Rider</th>
+          <th>Elapsed Time</th>
+          <th>Moving Time</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="https://www.strava.com/activities/18534171214" target="_blank" rel="noopener noreferrer">
+              Jakub Borowski
+            </a>
+          </td>
+          <td>4:30:56</td>
+          <td>3:49:10</td>
+          
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a href="https://www.strava.com/activities/18534171737" target="_blank" rel="noopener noreferrer">
+              Austin Breunig
+            </a>
+          </td>
+          <td>4:31:24</td>
+          <td>3:51:55</td>
+        </tr>
+      </table>
+
+      <h3>Gravel — Gold Ridge Ramble</h3>
+      <table>
+        <tr>
+          <th>Rank</th>
+          <th>Rider</th>
+          <th>Elapsed Time</th>
+          <th>Moving Time</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="https://www.strava.com/activities/18549394542" target="_blank" rel="noopener noreferrer">
+              Katie LeMay
+            </a>
+          </td>
+          <td>8:41:45</td>
+          <td>6:19:40</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a href="https://www.strava.com/activities/18550115294" target="_blank" rel="noopener noreferrer">
+              Austin Breunig
+            </a>
+          </td>
+          <td>8:43:32</td>
+          <td>5:57:53</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="month-section">
+      <h2>June 2026</h2>
+
+      <h3>Trail — West Mag Classic</h3>
+      <table>
+        <tr>
+          <th>Rank</th>
+          <th>Rider</th>
+          <th>Elapsed Time</th>
+          <th>Moving Time</th>
+        </tr>
+        <tr>
+          <td colspan="4">No results yet.</td>
+        </tr>
+      </table>
+
+      <h3>Gravel — Gilpin Hardrock</h3>
+      <table>
+        <tr>
+          <th>Rank</th>
+          <th>Rider</th>
+          <th>Elapsed Time</th>
+          <th>Moving Time</th>
+        </tr>
+        <tr>
+          <td colspan="4">No results yet.</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Alley Moose Race Series
+  </footer>
+
+</body>
+</html>
